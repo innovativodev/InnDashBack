@@ -1,0 +1,22 @@
+
+{
+    "region" : "us-east-2",
+    "configuration" : "Debug",
+    "framework"     : "net8.0",
+    "self-contained" : true,
+    "application"    : "InndashAPI",
+    "environment"    : "InndashAPI-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-057dbfca349a2d1e6\";\"aws:ec2:vpc,Subnets\"=\"subnet-06b2c9394b84d9d40\";\"aws:ec2:vpc,ELBSubnets\"=\"subnet-06b2c9394b84d9d40,subnet-05b88e94ee794ea6e,subnet-073c9a9fa0a903d6f\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.8.0 running .NET Core",
+    "environment-type"     : "LoadBalanced",
+    "loadbalancer-type"    : "application",
+    "cname"                : "inndashapi-dev",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "",
+    "health-check-url"     : "/",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}
